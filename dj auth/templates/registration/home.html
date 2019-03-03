@@ -1,0 +1,9 @@
+{% extends 'registration/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  Hi {{ user.username }}!
+    you are a {{ type }}
+  <p><a href="{% url 'logout' %}">logout</a></p>
+{% endblock %}
